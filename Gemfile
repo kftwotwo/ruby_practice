@@ -1,5 +1,10 @@
 source('https://rubygems.org')
 
-gem('rspec')
-gem('pry')
-gem('pry-byebug')
+group :test do
+  gem('rspec')
+end
+
+group :development do
+  gem('pry')
+  gem('pry-byebug')
+end
